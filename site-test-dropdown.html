@@ -5,14 +5,46 @@
     <meta name="author" content="Jonah Casablanca">
     <meta name="description" content="An HTML page with Bootstrap and Bootswatch">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="assets/css/helloworld.txt"> -->
+    <link rel="stylesheet" href="assets/css/site-dropdown-help.css">
     <link rel="icon" href="images/" type="image/x-icon">
     <title>Stetson Eye Movement</title>
 </head>
 <body>
-    <!-- DROPDOWN DOESN'T WORK YET -->
+    <!-- DROPDOWN CODE GOES HERE -->
     <div class="container-fluid">
-        <h2>Identifying Variables</h2>
+        <div class="form-group col-sm-8">
+          <label for="myMultiselect">BS custom multiselect</label>
+          <div id="myMultiselect" class="multiselect">
+            <div id="mySelectLabel" class="selectBox" onclick="toggleCheckboxArea()">
+              <select class="form-select">
+                <option>somevalue</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div id="mySelectOptions">
+              <label for="one"><input type="checkbox" id="one" onchange="checkboxStatusChange()" value="one" /> First checkbox</label>
+              <label for="two"><input type="checkbox" id="two" onchange="checkboxStatusChange()" value="two" /> Second checkbox</label>
+              <label for="three"><input type="checkbox" id="three" onchange="checkboxStatusChange()" value="three" /> Third checkbox</label>
+              <label for="four"><input type="checkbox" id="four" onchange="checkboxStatusChange()" value="four" /> Third checkbox</label>
+              <label for="five"><input type="checkbox" id="five" onchange="checkboxStatusChange()" value="five" /> First checkbox</label>
+              <label for="six"><input type="checkbox" id="six" onchange="checkboxStatusChange()" value="six" /> Second checkbox</label>
+              <label for="seven"><input type="checkbox" id="seven" onchange="checkboxStatusChange()" value="seven" /> Third checkbox</label>
+              <label for="eight"><input type="checkbox" id="eight" onchange="checkboxStatusChange()" value="eight" /> First checkbox</label>
+              <label for="nine"><input type="checkbox" id="nine" onchange="checkboxStatusChange()" value="nine" /> Second checkbox</label>
+              <label for="ten"><input type="checkbox" id="ten" onchange="checkboxStatusChange()" value="ten" /> Third checkbox</label>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="assets/js/site-dropdown-help.js"></script>
+</body>
+</html>
+
+<!-- Dropdown menu old code -->
+    <!-- <h2>Identifying Variables</h2>
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Variable(s)
             <span class="caret"></span></button>
@@ -55,7 +87,4 @@
                 </li>
             </ul>
         </div> 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-</html>
+    </div> -->
