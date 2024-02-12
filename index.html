@@ -92,9 +92,9 @@
       <div class="container-fluid">
         <h3>Select Data Set</h3>
         <!-- Baseline Data Cleaning File -->
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="variable1">
-          <label for="variable1" class="form-check-label">Baseline Data Cleaning File</label>
+        <select class="form-select">
+          <option selected>SELECT YOUR DATA FILE</option>
+          <option value="1">Baseline Data Cleaning File</option>
           <button class="btn" data-bs-toggle="modal" data-bs-target="#modal">
             <i class="fa-solid fa-circle-info" style="color:green"></i></button>
             <div class="modal fade modal-sm" id="modal">
@@ -108,11 +108,8 @@
                 </div>
               </div>
             </div>
-      </div>
-      <!-- Modal Data Cleaning File -->
-      <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="variable1">
-          <label for="variable1" class="form-check-label">Modal Data Cleaning File</label>
+            <!-- Modal Data Cleaning File -->
+          <option value="2">Modal Data Cleaning File</option>
           <button class="btn" data-bs-toggle="modal" data-bs-target="#modal">
             <i class="fa-solid fa-circle-info" style="color:green"></i></button>
             <div class="modal fade modal-sm" id="modal">
@@ -126,10 +123,10 @@
                 </div>
               </div>
             </div>
-        </div>
-      </div>
+      </select>
     </div>
-    
+  </div>
+    <br>
     <!-- COLLAPSE CODE GOES HERE -->
     <button type="button" class="collapsible">Select Idenifying Variables</button>
     <div class="content">
@@ -1742,7 +1739,7 @@
     <button type="button" class="collapsible">Select Individual Differences</button>
     <div class="content">
       <div class="container-fluid">
-        <h3>Individual Differences</h3>
+        <h3>Individual Differences - Vocabulary</h3>
         <!-- Vocabulary Raw -->
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="variable1">
@@ -1815,6 +1812,8 @@
               </div>
             </div>
         </div>
+        <hr>
+        <h3>Individual Differences - Comprehension</h3>
         <!-- Comprehension Raw -->
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="variable1">
@@ -1905,7 +1904,9 @@
               </div>
             </div>
         </div>
+        <hr>
         <!-- Nelson Denny Sum GE -->
+        <h3>Individual Differences - General Reading Ability</h3>
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="variable1">
           <label for="variable1" class="form-check-label">Nelson Denny Sum GE</label>
@@ -2013,6 +2014,8 @@
               </div>
             </div>
         </div>
+        <hr>
+        <h3>Individual Differences - Working Memory</h3>
         <!-- Operation Span -->
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="variable1">
@@ -2067,6 +2070,8 @@
               </div>
             </div>
         </div>
+        <hr>
+        <h3>Individual Differences - Phonological Processing</h3>
         <!-- Elision Raw -->
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="variable1">
@@ -2769,6 +2774,8 @@
               </div>
             </div>
         </div>
+        <hr>
+        <h3>Individual Differences - Spelling</h3>
         <!-- Spelling Diction -->
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="variable1">
@@ -2823,6 +2830,8 @@
               </div>
             </div>
         </div>
+        <hr>
+        <h3>Individual Differences - Morphology</h3>
         <!-- Morphology Count -->
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="variable1">
@@ -2877,6 +2886,8 @@
               </div>
             </div>
         </div>
+        <hr>
+        <h3>Individual Differences - Demographics</h3>
         <!-- Age -->
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="variable1">
