@@ -92,9 +92,9 @@
       <div class="container-fluid">
         <h3>Select Data Set</h3>
         <!-- Baseline Data Cleaning File -->
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="variable1">
-          <label for="variable1" class="form-check-label">Baseline Data Cleaning File</label>
+        <select class="form-select">
+          <option selected>SELECTOR MENU</option>
+          <option value="1">Baseline Data Cleaning File</option>
           <button class="btn" data-bs-toggle="modal" data-bs-target="#modal">
             <i class="fa-solid fa-circle-info" style="color:green"></i></button>
             <div class="modal fade modal-sm" id="modal">
@@ -108,11 +108,8 @@
                 </div>
               </div>
             </div>
-      </div>
-      <!-- Modal Data Cleaning File -->
-      <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="variable1">
-          <label for="variable1" class="form-check-label">Modal Data Cleaning File</label>
+            <!-- Modal Data Cleaning File -->
+          <option value="2">Modal Data Cleaning File</option>
           <button class="btn" data-bs-toggle="modal" data-bs-target="#modal">
             <i class="fa-solid fa-circle-info" style="color:green"></i></button>
             <div class="modal fade modal-sm" id="modal">
@@ -126,10 +123,10 @@
                 </div>
               </div>
             </div>
-        </div>
-      </div>
+      </select>
     </div>
-    
+  </div>
+    <br>
     <!-- COLLAPSE CODE GOES HERE -->
     <button type="button" class="collapsible">Select Idenifying Variables</button>
     <div class="content">
