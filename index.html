@@ -20,51 +20,65 @@
 
 <body>
     <!-- Testing navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-inline navbar-expand-lg navbar-green fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/logo.png">
-        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 order-3"> <!-- Changed class from "me-auto" to "ms-auto" -->
             <li class="nav-item">
-              <a class="nav-link active" href="#">Apply</a>
+              <a class="nav-link active" href="#" id="nav-link">Apply</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Visit</a>
+              <a class="nav-link active" href="#" id="nav-link">Visit</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">StetsonToday</a>
+              <a class="nav-link active" href="#" id="nav-link">StetsonToday</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">MyStetson</a>
+              <a class="nav-link active" href="#" id="nav-link">MyStetson</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Alumni</a>
+              <a class="nav-link active" href="#" id="nav-link">Alumni</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Giving</a>
+              <a class="nav-link active" href="#" id="nav-link">Giving</a>
             </li>
             <li>
               <form class="d-flex ms-auto" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-success" type="submit" id="white-btn">Search</button>
               </form>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
+    
+  <br>
+  <br>
+  <br>
+  
+  <!-- New unordered list with links over a different background color -->
+  <ul class="navbar navbar-inline navbar-nav-green d-flex list-unstyled" id="navbar-no-margin">
+      <li class="nav-item me-3 flex-grow-1">
+        <a href="#" class="nav-link active">
+          <img src="assets/images/logo.png" alt="Stetson Logo" class="img-fluid" style="max-width: 100%; margin-left: 15%;">
+        </a>
+      </li>
+      <li class="nav-item flex-grow-1">
+        <a class="nav-link active" href="#" style="font-weight: bolder; font-size: 1.5rem;">Link 1</a>
+      </li>
+      <li class="nav-item flex-grow-1">
+        <a class="nav-link active" href="#" style="font-weight: bolder; font-size: 1.5rem;">Link 2</a>
+      </li>
+      <li class="nav-item flex-grow-1">
+        <a class="nav-link active" href="#" style="font-weight: bolder; font-size: 1.5rem;">Link 3</a>
+      </li>
+  </ul>
+  
+  <hr style = "border-top: 1px solid #000000; border-width: 5px;">
 
     <br>
     <h4>(SCIDEM) The Stetson Corpus of Individual Differences and Eye Movements</h4>

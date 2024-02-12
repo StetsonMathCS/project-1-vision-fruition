@@ -37,6 +37,18 @@
     color: white;
 }
 
+#navbar-no-margin {
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 0; /* Remove bottom margin */
+  padding-top: 0.5rem; /* Adjust top padding */
+  padding-bottom: 0.5rem; /* Adjust bottom padding */
+}
+
+#nav-item-no-margin {
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
 #white-btn{
   --bs-btn-color:#fff;--bs-btn-border-color:#fff;
   --bs-btn-hover-color:#000000;
@@ -51,5 +63,9 @@
   --bs-btn-disabled-bg:transparent;
   --bs-btn-disabled-border-color:#fff;
   --bs-gradient:none}
+
+  .inlineList > * {
+    display: inline-block;
+}
 
   [id="modal"] .bd-example .btn,
